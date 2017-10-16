@@ -14,7 +14,18 @@
 #include <cstdlib>
 
 using namespace std;
-
+class Base{
+    
+};
+class draw1{
+    
+};
+class draw2{
+    
+};
+class draw3{
+    
+};
 /*
  * 
  */

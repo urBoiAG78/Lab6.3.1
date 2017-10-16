@@ -26,7 +26,7 @@ public:
     Draw(){
         Base::draw("Drawing 1:");
         Base::draw(" /\\ ");
-        Base::draw(" //\\\\ ");
+        Base::draw("//\\\\");
     }
     
 };
@@ -35,7 +35,7 @@ public:
     Draw(){
         Base::draw("Drawing 2:");
         Base::draw(" /\\ ");
-        Base::draw(" /**\\ ");
+        Base::draw("/**\\");
     }
 };
 class draw3:public Base{
@@ -43,17 +43,20 @@ public:
     Draw(){
         Base::draw("Drawing 2:");
         Base::draw(" /\\ ");
-        Base::draw(" /++\\ ");
+        Base::draw("/++\\");
     }
 };
 /*
  * 
  */
 int main(int argc, char** argv) {
-    draw1 *draw1;
-    draw2 *draw2;
-    draw3 *draw3;
+    draw1 *Draw1;
+    draw2 *Draw2;
+    draw3 *Draw3;
     
+    Draw1 = new draw1();
+    Draw2 = new draw2();
+    Draw3 = new draw3();
     
     return 0;
 }

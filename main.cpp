@@ -50,7 +50,11 @@ public:
  * 
  */
 int main(int argc, char** argv) {
-
+    draw1 *draw1;
+    draw2 *draw2;
+    draw3 *draw3;
+    
+    
     return 0;
 }
 

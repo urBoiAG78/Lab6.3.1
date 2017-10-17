@@ -24,7 +24,7 @@ public:
 };
 class draw1: public Base{
 public:
-    Draw(){}
+    
         void getDraw(void){
         Base::draw("Drawing 1:");
         Base::draw(" /\\ ");
@@ -33,7 +33,7 @@ public:
 };
 class draw2: public Base{
 public:
-    Draw(){}
+    
         void getDraw(void){
         Base::draw("Drawing 1:");
         Base::draw(" /\\ ");
@@ -42,11 +42,11 @@ public:
 };
 class draw3: public Base{
 public:
-    Draw(){}
-        void getDraw(void){
-        Base::draw("Drawing 1:");
-        Base::draw(" /\\ ");
-        Base::draw("//\\\\");
+   
+    void getDraw(void){
+    Base::draw("Drawing 1:");
+    Base::draw(" /\\ ");
+    Base::draw("//\\\\");
         }
 };
 /*

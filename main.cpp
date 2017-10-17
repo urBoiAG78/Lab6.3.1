@@ -12,39 +12,42 @@
  */
 
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 class Base{
 public: 
     Base(){};
-    void draw(string drawing){
+    string draw(string drawing){
         cout << drawing << endl;
     }
 };
 class draw1: public Base{
 public:
-    Draw(){
+    Draw(){}
+        void getDraw(void){
         Base::draw("Drawing 1:");
         Base::draw(" /\\ ");
         Base::draw("//\\\\");
-    }
-    
+        }
 };
-class draw2 :public Base{
+class draw2: public Base{
 public:
-    Draw(){
-        Base::draw("Drawing 2:");
+    Draw(){}
+        void getDraw(void){
+        Base::draw("Drawing 1:");
         Base::draw(" /\\ ");
-        Base::draw("/**\\");
-    }
+        Base::draw("//\\\\");
+        }
 };
-class draw3:public Base{
+class draw3: public Base{
 public:
-    Draw(){
-        Base::draw("Drawing 2:");
+    Draw(){}
+        void getDraw(void){
+        Base::draw("Drawing 1:");
         Base::draw(" /\\ ");
-        Base::draw("/++\\");
-    }
+        Base::draw("//\\\\");
+        }
 };
 /*
  * 
@@ -57,6 +60,7 @@ int main(int argc, char** argv) {
     Draw1 = new draw1();
     Draw2 = new draw2();
     Draw3 = new draw3();
+    
     
     return 0;
 }
